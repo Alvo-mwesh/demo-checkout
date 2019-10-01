@@ -7,7 +7,8 @@
     --secondary-color: #EC4847;
     --main-background-color: #f8fcff;
     --main-font: 'Roboto', Arial, Helvetica, sans-serif;
-    --p-font-size: 0.8750em;
+    --p-font-size: 	0.9375rem;
+    --heading-font-size: 1.8rem;
     --btn-padding: 7px 14px;
     --box-shadow: 0px 0px 8px 0px rgba(34,36,38,0.15);
 }
@@ -181,7 +182,7 @@ label{
 
 input{
     margin: 10px 0 10px 0;
-    width: 60%;
+    width: 70%;
     padding: 10px 15px;
     border: 0.7px solid rgba(112,112,112,0.15);
     border-radius: 4px;
@@ -198,6 +199,10 @@ input::placeholder{
     background-color: var(--link-color);
     border: none;
 
+}
+
+#pay-now-btn{
+    margin-top: 10px;
 }
 
 
@@ -240,12 +245,17 @@ input::placeholder{
     float: left;
 }
 
+.cta-text h2 {
+    font-size: var(--heading-font-size);
+}
+
 .cta-text p{
   margin-top: -10px;
 }
 
 
 .cta-btns{
+    display: flex;
     float: left;
     align-items: center;
     margin-left: auto;
@@ -265,7 +275,7 @@ footer{
    justify-content: space-evenly;
    align-items: flex-start;
    background-color: var(--primary-color);
-    padding: 70px 0 0 60px;
+   padding: 70px 0 60px 0px;
    position: relative;
    min-height: 130px;
 }
