@@ -36,7 +36,7 @@
             <ul class="nav-links">
                 <li><a href="#">Developers</a></li>
                 <li><a href="#">Support</a></li>
-                <li><a href="#">Demo</a></li>
+                <li><a href="#">View demo</a></li>
             </ul>
             <div class="nav-btns">
                 <a href="#" class="button secondary" target="_blank">Sign in</a>
@@ -61,17 +61,17 @@
                         <label for="email"> Enter your email address</label>
                         <input type="email" name="Email" id="email" required maxlength="50" placeholder="e.g email@email.com">
 
-                        <div>
+                        <div id="pay-now-btn">
                             <a data-isw-payment-button="" data-isw-ref="MW4Hmp7p4">
                                 <TODO Change this to correct live source url>
                                 <script id="buttonJs" src="https://testmerchant.interswitch-ke.com/webpay/button/functions.js" type="text/javascript" data-isw-preauth="0" data-isw-cardTokens="[{&quot;panLast4Digits&quot;:&quot;1895&quot;,&quot;panFirst6Digits&quot;:&quot;506183&quot;,&quot;token&quot;:&quot;C48FA7D7F466914A3E4440DE458AABC1914B9500CC7780BEB4&quot;,&quot;expiry&quot;:&quot;05/20&quot;},{&quot;panLast4Digits&quot;:&quot;1111&quot;,&quot;panFirst6Digits&quot;:&quot;411111&quot;,&quot;token&quot;:&quot;DBA747BC30109711E8A1A2FDAFCD27A851B37DDA24F8BE2724&quot;,&quot;expiry&quot;:&quot;04/20&quot;}]" data-isw-redirectUrl="https://testmerchant.interswitch-ke.com" data-isw-terminalId="3TLP0001" data-isw-fee="0" data-isw-amount="100" data-isw-customerInfor="1002|kelvin|mwangi| kelvin.mwangi@interswitchgroup.com |0714171282|NBI|KE|00200|wstlnds|NBI" data-isw-transactionReference="1234890" data_isw_icon_url="https://photos.lci.fr/images/613/344/oeuf-instagram-record-31922d-0@1x.jpeg" data-isw-domain="ISWKE" data-isw-dateOfPayment="2016-09-05T10:20:26" data-isw-currencyCode="KES" data-isw-narration="Payment" data-isw-channel="WEB" data-isw-merchantCode="ISWKEN0001" data-isw-orderId="OID123453"></script>
                             </a>
-                            <!-- <button class="button pay">Pay now</button> -->
-                        </div>                            
+                        </div> 
+                        <button class="button pay" id="pay">Pay now</button>                          
                         <!-- <div class="secure-pay">Secure payment</div> -->
                     </form>
 
-                    <p class="doc-link">Find instructions to integrate checkout to your website <a class="link" href="http://" target="_blank">here</a>.</p>
+                    <p class="doc-link">Find instructions to integrate checkout to your website <a class="link" href="https://interswitch-docs.readme.io/docs/ipg-js" target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -109,5 +109,13 @@
             <a href="http://" target="_blank">LinkedIn</a>
         </nav>
     </footer> 
+
+    <script type="text/javascript">
+        document.getElementById("pay").onclick = function () {
+            document.getElementById("pay").style.display = "none";
+        }
+
+        document.getElementById("pay-now-btn")
+    </script>
 </body>
 </html>

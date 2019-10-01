@@ -200,6 +200,11 @@ input::placeholder{
 
 }
 
+#pay-now-btn{
+    border: 1px solid black;
+    display: 
+}
+
 .secure-pay{
     font-size: 13px;
     margin-left: 40px;
@@ -208,7 +213,7 @@ input::placeholder{
 .secure-pay::before{
     content: url(../img/lock-icon.png);
     padding-right: 8px;
-    vertical-align: middle;\
+    vertical-align: middle;
 }
 
 .doc-link{
