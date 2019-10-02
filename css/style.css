@@ -50,12 +50,18 @@ nav
     width: 100%;
     margin: 0 60px;
     display: inline-flex;
-    
+
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 
 .nav-brand img{
     padding-top: 20px;
-    width: 140px;    
+    width: 140px;
 }
 
 img{
@@ -65,7 +71,7 @@ img{
 .nav-links {
     display: inline-flex;
     margin: auto 0;
-       
+
 }
 
 
@@ -85,7 +91,7 @@ img{
 .nav-links a:hover{
     color: var(--link-color);
     transition-duration:  0.2s;
- 
+
 }
 
 .nav-btns{
@@ -112,7 +118,7 @@ img{
     color: var(--primary-color);
     font-weight: 500;
     background-color: transparent;
-    border: 1px solid transparent;    
+    border: 1px solid transparent;
 }
 
 .secondary::after{
@@ -260,13 +266,13 @@ input::placeholder{
     align-items: center;
     margin-left: auto;
     margin-right: 30px;
-    
+
 }
 
 .tertiary{
     color: var(--primary-color);
     background-color: transparent;
-    border: 1px solid var(--primary-color);    
+    border: 1px solid var(--primary-color);
 }
 
 footer{
@@ -315,7 +321,196 @@ footer nav a{
 
 
 
+/* Responsiveness */
 
+/* @media only screen and (min-width: 320px){
+    .cta-section{
+        margin-left: 20px;
+    }
+} */
+
+@media only screen and (max-width: 425px){
+
+    nav{
+        margin: 0 40px;
+        position: sticky;
+    }
+
+    .logo{
+        width: 60px;
+    }
+
+    #sidebar_toggle{
+        display: inline;
+    }
+
+    .nav-links{
+        display: none;
+
+    }
+
+    .nav-btns {
+        display: none;
+    }
+
+    .nav-links li #sidebar_toggle{
+        display: inline;
+    }
+
+    .section-wrapper{
+        display: inline;
+        margin: 0 30px;
+    }
+
+    .img-left{
+        margin: 0 20px;
+    }
+
+    .img-left img{
+        width: 30px;
+        padding-top: 40px;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .right-section{
+       margin: 0 30px;
+    }
+
+    .description{
+        margin-right: 30px;
+    }
+
+    form{
+        margin-right: 30px;
+    }
+
+    input{
+        width: 80%;
+    }
+
+    .doc-link {
+        margin-right: 30px;
+    }
+
+    .cta-section{
+        display: block;
+        padding: 60px 0;
+        margin: 0 30px;
+    }
+
+    .cta-text{
+        float: none;
+    }
+
+    .cta-text p{
+        margin-right: 30px;
+    }
+
+    .cta-btns{
+        display: inline;
+    }
+
+    .cta-btns{
+        float: none;
+    }
+
+    footer {
+        display: block;
+
+    }
+
+    footer nav{
+        display: block;
+        margin: 0 30px;
+        padding-bottom: 35px;
+
+    }
+
+    footer nav:first-of-type{
+        margin-left: 30px;
+    }
+
+
+    footer nav a{
+        display: block;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+    #sidebar_toggle{
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .nav-btns{
+        display: none;
+    }
+
+   .img-left{
+       width: 50%;
+   }
+
+   .img-left img{
+       width: 250px;
+   }
+
+   .cta-banner{
+       margin-top: 20px;
+   }
+
+   .cta-section{
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 60px;
+        padding: 40px 0;
+    }
+
+   .cta-btns{
+       display: block;
+       margin-right: 30px;
+   }
+
+ 
+
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    #sidebar_toggle{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+    #sidebar_toggle{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 25600px) {
+
+    #sidebar_toggle{
+        display: none;
+    }
+
+}
 
 
 

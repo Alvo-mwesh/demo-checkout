@@ -29,7 +29,7 @@
 </head>
 <body>
     <header class="fixed-nav">
-        <nav>
+        <nav id="navbar">
             <div class="nav-brand">
                 <a href="https://business.interswitch-ke.com/"><img class="logo" src="img/blue-logo.png" alt="quickteller business blue logo"></a>
             </div>
@@ -38,6 +38,7 @@
                 <li><a href="#">Support</a></li>
                 <li><a href="#">View demo</a></li>
             </ul>
+            <a id="sidebar_toggle" href="#">☰</a></li>
             <div class="nav-btns">
                 <a href="https://business.interswitch-ke.com/login" class="button secondary" target="_blank">Sign in</a>
                 <a href="" class="button primary" target="_blank">Explore</a>
@@ -51,7 +52,9 @@
             <!-- <hr />  -->
 
             <div class="section-wrapper">
-                <img src="img/iphone-11-pro.png" alt="iphone 11 pro">
+                <div class="img-left">
+                    <img src="img/iphone-11-pro.png" alt="iphone 11 pro">
+                </div>
                 <div class="right-section">
                     <h3>iphone 11 Pro</h3>
                     <p class="description">KES 2.00</p>
@@ -115,7 +118,20 @@
             document.getElementById("pay").style.display = "none";
         }
 
-        document.getElementById("pay-now-btn")
+        window.onscroll = function () {scroll()};
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function scroll (){
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
 </body>
 </html>
